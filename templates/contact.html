@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>रंगोली Rangoli CLUB</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Beth+Ellen|Nova+Cut&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/merlin.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/products.css') }}">
+</head>
+<style>
+   .slogan{
+    font-family: 'Beth Ellen', cursive;
+    color:black;
+    font-size: 36px;
+  }
+   .author{
+    font-family: 'Nova Cut', cursive;
+    color:black;
+  } 
+  .contact-info{
+    padding-top:170px;
+  }
+</style>
+<body> 
+    <!-- navbar -->
+      <nav>
+        <div class="logo">
+          <h3><a href="{{ url_for('merlin') }}" class="logo-name">रंगोली Rangoli</a></h3>
+        </div>
+        <ul class="nav-links">
+          <ul class="nav-links">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('products') }}">Products</a></li>
+            <li><a href="{{ url_for('categories') }}">Categories</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+            <li><a href="{{ url_for('login') }}" id="login">Login</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    <!-- navbar -->
+    <center>
+      <div class="contact-info">
+        <p class="slogan">"रंगोली Rangoli"</p>
+        <p class="author">S Sanjana</p>
+        <p class="author">Drisana Saikia</p>
+        
+        <p class="author">ss4987@srmist.edu.in</p>
+        <p class="author">ds4884@srmist.edu.in</p>
+          <p class="author"><a href="https://www.linkedin.com/in/sanjana-s-038919288/" class="logo-name">On LinkedIn</a></p>
+          <p class="author"><a href="https://www.linkedin.com/in/drisana-saikia-0a6818273/" class="logo-name">On LinkedIn</a></p>
+      </div>
+    </center>
+      
+  
+  <script type="text/javascript" src="js/nav.js"></script>
+  </body>
+</html>

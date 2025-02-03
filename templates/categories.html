@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Categories</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/merlin.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/products.css') }}">
+</head>
+<body>
+  <!-- navbar -->
+    <nav>
+      <div class="logo">
+        <h3><a href="{{ url_for('merlin')}}" class="logo-name">रंगोली Rangoli</a></h3>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('products') }}">Products</a></li>
+        <li><a href="{{ url_for('categories') }}">Categories</a></li>
+        <li><a href="{{ url_for('contact') }}">ContactUs</a></li>
+        <li><a href="{{ url_for('login') }}">Login</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  <!-- navbar -->
+    
+      <h1 class="main-head-of-color-gold">Unskippable Categories</h1>
+        <center><hr></center> 
+      <div class="product-img">
+        <img class="product-center-img" src="{{ url_for('images', filename='nordwood-themes-Nv4QHkTVEaI-unsplash (1).jpg') }}" alt="" srcset="">
+      </div> 
+      <br> <br>
+      <center><h2 class="trends-header">TRENDING NOW</h2></center><br><br>
+      <div class="trends-categories">
+        <a href="{{ url_for('products') }}"><img src="images/categories-img/category1.png" alt=""></a>
+        <a href="{{ url_for('products') }}"><img src="images/categories-img/category2.png" alt=""></a>
+        <a href="{{ url_for('products') }}"><img src="images/categories-img/category3.png" alt=""></a>
+        <a href="{{ url_for('products') }}"><img src="images/categories-img/category4.png" alt=""></a>
+        <a href="{{ url_for('products') }}"><img src="images/categories-img/category5.png" alt=""></a>
+        <a href="{{ url_for('products') }}"><img src="images/categories-img/category6.png" alt=""></a>
+    </div><br><br>
+    <center><h2 class="trends-header">+For Her</h2></center><br><br>
+    <div class="for-her">
+      <a href="{{ url_for('products') }}"><img src="images/categories-img/for-her1.png" alt=""></a>
+      <a href="{{ url_for('products') }}"><img src="images/categories-img/for-her2.png" alt=""></a>
+    </div><br><br>
+    <center><h2 class="trends-header">+For Him</h2></center><br>
+    <div class="for-him">
+      <a href="{{ url_for('products') }}"><img src="images/categories-img/brands-for-him1.png" alt=""></a>
+      <a href="{{ url_for('products') }}"><img src="images/categories-img/brands-for-him2.png" alt=""></a>
+      <a href="{{ url_for('products') }}"><img src="images/categories-img/brands-for-him3.png" alt=""></a>
+      <a href="{{ url_for('products') }}"><img src="images/categories-img/brands-for-him4.png" alt=""></a>
+      <a href="{{ url_for('products') }}"><img src="images/categories-img/brands-for-him5.png" alt=""></a>
+    </div>
+  <script type="text/javascript" src="js/nav.js"></script>
+  </body>
+</html>
